@@ -8,3 +8,7 @@
 $(".autosubmit select, SELECT#seAddressPulldown").change(function() {
     $(this).closest('form').submit();
 });
+
+$("html.js #productMainImage").find('.no-js').each(function(){
+  $(this).remove();
+})
