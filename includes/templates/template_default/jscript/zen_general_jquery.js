@@ -9,6 +9,10 @@ $(".autosubmit select, SELECT#seAddressPulldown").change(function() {
     $(this).closest('form').submit();
 });
 
-$("html.js #productMainImage").find('.no-js').each(function(){
+var productImageWrappers = $("html.js #productMainImage, html.js #productAdditionalImages");
+productImageWrappers.find('.no-js').each(function() {
   $(this).remove();
-})
+});
+productImageWrappers.find('.js').each(function() {
+  $(this).show();
+});
