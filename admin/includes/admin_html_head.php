@@ -18,7 +18,8 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 <link rel="stylesheet" type="text/css" href="includes/template/css/normalize.css" id="normalizeCSS">
-<!-- <link rel="stylesheet" type="text/css" href="includes/template/css/foundation.min.css" id="foundationCSS"> -->
+<!-- @TODO - restore back to foundation.min.css */ -->
+<link rel="stylesheet" type="text/css" href="includes/template/css/foundation.css" id="foundationCSS">
 <link rel="stylesheet" type="text/css" href="includes/template/css/stylesheet.css" id="stylesheetCSS">
 <link rel="stylesheet" type="text/css" href="includes/template/css/stylesheet_print.css" media="print" id="printCSS">
 
