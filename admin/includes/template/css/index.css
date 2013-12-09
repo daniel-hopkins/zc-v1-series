@@ -8,12 +8,16 @@
  * @version $Id: stylesheet.css 19301 2011-07-28 21:50:05Z kuroi $
  */
 
-/* RESET Zurb Table stuff */ 
-table { background: #fff; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; margin: 0 0 0 0; border: none; }
-table tbody tr td { color: #333; padding: 0 0; vertical-align: top; border: none; }
+/* RESET Zurb Table stuff */
+/*table { background: #fff; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; margin: 0 0 0 0; border: none; }*/
+/*table { border: none; }*/
+/*table tbody tr td { color: #333; padding: 0 0; vertical-align: top; border: none; }*/
 
+table {
+  margin-bottom: 0;
+}
 
-.version-notify { 
+.version-notify {
   text-align: right;
 }
 
@@ -29,41 +33,41 @@ color: white;
 color: white;
 }
 
-.widget-header 
+.widget-header
 {
   background-color: #dddddd;
   padding: 5px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .widget-header h1
 {
-  background-color: #dddddd; 
+  background-color: #dddddd;
   font-size: 1em;
-	margin: 0 0 0 0; 
-  padding: 0 0 0 0; 
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   float: left;
   cursor: move;
   width: 90%;
-} 
+}
 .sortable-column
 {
-	min-height: 400px;
-	padding-top: 20px;
+  min-height: 400px;
+  padding-top: 20px;
 }
-.widget-container 
+.widget-container
 {
   margin: 10px 0 0 0;
-	border: 1px solid #555555; 
+  border: 1px solid #555555;
 }
-.widget-row 
+.widget-row
 {
-	background-color: #ccccff;
-	margin: 1px;
-	padding: 2px;
+  background-color: #ccccff;
+  margin: 1px;
+  padding: 2px;
 }
-.widget-body 
+.widget-body
 {
-	clear: both;
+  clear: both;
   background-color: #dddddd;
   padding: 2px;
   /*margin: 1px;*/
@@ -84,7 +88,7 @@ clear:both;
 font-size:9px;
 text-align:center;
 }
-.widget-update-header 
+.widget-update-header
 {
   background-color: #11ff11;
   margin: 1px;
@@ -92,11 +96,11 @@ text-align:center;
 }
 .widget-tools
 {
-	padding-top: 10px;
+  padding-top: 10px;
 }
-.widget-tools a 
+.widget-tools a
 {
-	font-size:18px;
+  font-size:18px;
 }
 
 .row { max-width: none}

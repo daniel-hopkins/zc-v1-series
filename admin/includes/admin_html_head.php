@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="includes/template/css/foundation.css" id="foundationCSS">
 <link rel="stylesheet" type="text/css" href="includes/template/css/stylesheet.css" id="stylesheetCSS">
 <link rel="stylesheet" type="text/css" href="includes/template/css/stylesheet_print.css" media="print" id="printCSS">
+<link rel="stylesheet" type="text/css" href="includes/template/css/index.css">
 
 <?php if (isset($extraCss)) { ?>
   <?php foreach ($extraCss as $css) { ?>
