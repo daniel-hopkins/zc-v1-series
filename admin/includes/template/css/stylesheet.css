@@ -10,12 +10,14 @@
 @import "foundation-icons.css";
 @import "entypo.css";
 
+
+body{
+/*font:normal normal 10px Verdana,sans-serif;*/
+}
 a{
 color:#0000ff;
 text-decoration:none;
-}
-a,body,html,table{
-font:normal normal 11px Verdana,sans-serif;
+/*font:normal normal 10px Verdana,sans-serif;*/
 }
 a:hover{
 color:#0000ff;
