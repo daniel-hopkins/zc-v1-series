@@ -22,7 +22,8 @@ if ($messageStack->size > 0) {
 }
 ?>
 <!-- All HEADER_ definitions in the columns below are defined in includes/languages/english.php //-->
-<table border="0" width="100%" cellspacing="0" cellpadding="0" class="header">
+<div class="show-for-medium-up">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" class="header">
 <?php
 // special spacing for alt_nav.php
   if (basename($PHP_SELF) == 'alt_nav.php') {
@@ -50,6 +51,7 @@ if ($messageStack->size > 0) {
     </tr></table></td>
   </tr>
 </table>
+</div>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr class="headerBar">
 
