@@ -11,17 +11,31 @@ if (!defined('IS_ADMIN_FLAG')) die('Illegal Access');
 
 $menuTitles = zen_get_menu_titles();
 ?>
-<div id="navbar">
-  <ul class="nde-menu-system" onmouseover="hide_dropdowns('in');" onmouseout="hide_dropdowns('out');">
-    <?php foreach (zen_get_admin_menu_for_user() as $menuKey => $pages) { ?>
-    <li>
-      <a class="top" href="<?php echo zen_href_link(FILENAME_ALT_NAV) ?>"><?php echo $menuTitles[$menuKey] ?></a>
-      <ul>
-        <?php foreach ($pages as $page) { ?>
-        <li><a href="<?php echo zen_href_link($page['file'], $page['params']) ?>"><?php echo $page['name'] ?></a></li>
+
+<div class="sticky">
+  <nav id="navbar" class="top-bar" data-topbar>
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name"></li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <?php foreach (zen_get_admin_menu_for_user() as $menuKey => $pages) { ?>
+          <li class="has-dropdown">
+            <!-- <a href="<?php echo zen_href_link(FILENAME_ALT_NAV) ?>"><?php echo $menuTitles[$menuKey] ?></a> -->
+            <a href="#0"><?php echo $menuTitles[$menuKey] ?></a>
+            <ul class="dropdown">
+              <?php foreach ($pages as $page) { ?>
+                <li><a href="<?php echo zen_href_link($page['file'], $page['params']) ?>"><?php echo $page['name'] ?></a></li>
+              <?php } ?>
+            </ul>
+          </li>
+          <li class="divider"></li>
         <?php } ?>
       </ul>
-    </li>
-    <?php } ?>
-  </ul>
+
+    </section>
+  </nav>
 </div>
