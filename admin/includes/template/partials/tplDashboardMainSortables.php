@@ -9,7 +9,7 @@
  */
 ?>
   <?php for ($column=0; $column<3; $column++) { ?>
-    <div class="small-4 columns sortable-column">
+    <div class="small-12 medium-6 large-4 columns sortable-column">
 
     <?php if (isset($tplVars['widgetInfoList'][$column])) { ?>
       <?php foreach ($tplVars['widgetInfoList'][$column] as $widget) { ?>
