@@ -38,10 +38,13 @@ color: white;
 
 
 .ui-sortable-placeholder {
-  margin: 0 0 10px 0;
-  border: 2px dashed black;
+  margin: 0 10px 10px 0;
+  border: 2px dashed #7c7c7c;
   visibility: visible !important;
-  background: #dddddd;
+  background: #dadada;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .ui-sortable-placeholder * { visibility: hidden; }
 
