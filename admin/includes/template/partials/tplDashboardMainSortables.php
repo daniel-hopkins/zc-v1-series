@@ -15,14 +15,14 @@
       <?php foreach ($tplVars['widgetInfoList'][$column] as $widget) { ?>
       <?php $tplVars['widget'] = $tplVars[$widget['widget_key']]; ?>
       <div class="widget-container sortable" id="<?php echo $tplVars[$widget['widget_key']]['widgetBaseId']; ?>">
-        <div class="widget-header">
-          <h1 class="widget-handle"><?php echo $tplVars[$widget['widget_key']]['widgetTitle']; ?></h1>
+        <header class="widget-header widget-handle">
+          <p class="left"><?php echo $tplVars[$widget['widget_key']]['widgetTitle']; ?></p>
           <div class="right">
             <a href="#" class="widget-edit"><i class="icon-pencil"></i></a>
             <a href="#" class="widget-minimize"><i class="icon-down-dir"></i></a>
             <a href="#" class="widget-close"><i class="icon-cancel-squared"></i></a>
             </div>
-        </div>
+        </header>
         <div class="widget-body">
 <?php 
         if (file_exists($tplVars[$widget['widget_key']]['templateFile'])) 
