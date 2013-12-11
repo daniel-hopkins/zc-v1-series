@@ -8,12 +8,12 @@
  * @version $Id: stylesheet.css 19301 2011-07-28 21:50:05Z kuroi $
  */
 
-/* RESET Zurb Table stuff */ 
+/* RESET Zurb Table stuff */
 table { background: #fff; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; margin: 0 0 0 0; border: none; }
 table tbody tr td { color: #333; padding: 0 0; vertical-align: top; border: none; }
 
 
-.version-notify { 
+.version-notify {
   text-align: right;
 }
 
@@ -29,46 +29,20 @@ color: white;
 color: white;
 }
 
-.widget-header 
-{
-  background-color: #dddddd;
-  padding: 5px;
-  overflow: hidden; 
-}
-.widget-header h1
-{
-  background-color: #dddddd; 
-  font-size: 1em;
-	margin: 0 0 0 0; 
-  padding: 0 0 0 0; 
-  float: left;
-  cursor: move;
-  width: 90%;
-} 
+
 .sortable-column
 {
 	min-height: 400px;
 	padding-top: 20px;
 }
-.widget-container 
-{
-  margin: 10px 0 0 0;
-	border: 1px solid #555555; 
+
+
+.ui-sortable-placeholder {
+  margin: 0 0 10px 0;
+  border: 2px dashed black;
+  visibility: visible !important;
+  background: #dddddd;
 }
-.widget-row 
-{
-	background-color: #ccccff;
-	margin: 1px;
-	padding: 2px;
-}
-.widget-body 
-{
-	clear: both;
-  background-color: #dddddd;
-  padding: 2px;
-  /*margin: 1px;*/
-}
-.ui-sortable-placeholder { margin: 10px 0 0 0; border: 2px dashed black; visibility: visible !important; background: #dddddd }
 .ui-sortable-placeholder * { visibility: hidden; }
 
 div.copyrightrow{
@@ -84,23 +58,84 @@ clear:both;
 font-size:9px;
 text-align:center;
 }
-.widget-update-header 
-{
-  background-color: #11ff11;
-  margin: 1px;
-  padding: 2px;
-}
-.widget-tools
-{
-	padding-top: 10px;
-}
-.widget-tools a 
-{
-	font-size:18px;
-}
+
 
 .row { max-width: none}
 
 .form-horizontal input, select  {font-size: 1.2em !important}
 
 label {font-size: 1.2em}
+
+
+/*new widgets 12/10/13 */
+.widget-container {
+  background: #fafafa;
+  border: 1px solid #cbcbcb;
+  margin: 0 10px 10px 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+     -moz-box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+          box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+}
+.widget-container.ui-sortable-helper {
+  -webkit-box-shadow: 6px 6px 30px rgba(0,0,0,.5);
+     -moz-box-shadow: 6px 6px 30px rgba(0,0,0,.5);
+          box-shadow: 6px 6px 30px rgba(0,0,0,.5);
+}
+.widget-container header p {
+  float: left;
+  font-size: 1.1rem;
+}
+
+.widget-header  {
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e1e1e1));
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #e1e1e1);
+  background-image:    -moz-linear-gradient(top, #f0f0f0, #e1e1e1);
+  background-image:      -o-linear-gradient(top, #f0f0f0, #e1e1e1);
+  background-image:         linear-gradient(to bottom, #f0f0f0, #e1e1e1);
+  padding: 5px;
+  border-bottom: 1px solid #cbcbcb;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+.widget-header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.widget-handle {
+  cursor: move;
+}
+.widget-header p {
+  margin-bottom: 0;
+  font-size: .9rem;
+  padding-left: 10px;
+}
+.widget-header a {
+  /*font-size: .8rem;*/
+  /*margin-top: 3px;*/
+  display: inline-block;
+  color: #5a5a5a;
+}
+
+.widget-header a.widget-close:hover {
+  color: #a40d16;
+}
+
+.widget-body {
+  padding: 10px;
+}
+.widget-body .widget-row {
+  padding: 5px;
+  /*font-size: .8rem;*/
+  border-bottom: 1px dotted #d5d5d5;
+}
+
+
+
+
+
